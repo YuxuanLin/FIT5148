@@ -1,0 +1,6 @@
+create table temp_AwardsCoaches (col_value STRING);
+create table temp_AwardsPlayers (col_value STRING);
+create table temp_Coaches (col_value STRING);
+create table temp_Master  (col_value STRING);
+create table temp_Scoring  (col_value STRING);
+create table temp_Teams  (col_value STRING);
