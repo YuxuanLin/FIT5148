@@ -20,3 +20,10 @@ FROM
 JOIN master
 ON ( pre.coachid = master.coachid)
 ;
+
+
+--Analysis
+ANALYZE TABLE awardscoaches COMPUTE STATISTICS;
+ANALYZE TABLE awardscoaches COMPUTE STATISTICS FOR COLUMNS coachid, award;
+ANALYZE TABLE master COMPUTE STATISTICS;
+ANALYZE TABLE master COMPUTE STATISTICS FOR COLUMNS firstname, lastname, birthyear, birthmon, birthday, birthcountry;
